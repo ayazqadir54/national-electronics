@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectors Sub-Categories | National Electronics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #6a0dad 0%, #ff4500 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #ffffff !important;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffeb3b !important;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=1920&h=1080&fit=crop') center/cover no-repeat;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(106, 13, 173, 0.3);
+            z-index: 1;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-info {
+            background: linear-gradient(135deg, #ff4500 0%, #ff6347 100%);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+        }
+        .btn-info:hover {
+            transform: scale(1.05);
+        }
+        .subcategories-section {
+            background: white;
+            padding: 60px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .subcategories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .subcategory-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+            overflow: hidden;
+        }
+        .subcategory-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .subcategory-card i {
+            font-size: 2rem;
+            color: #ff4500;
+            margin-bottom: 15px;
+        }
+        .subcategory-card h6 {
+            font-weight: 600;
+            color: #495057;
+        }
+        footer {
+            background: linear-gradient(135deg, #6a0dad 0%, #ff4500 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        footer h5 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ffeb3b;
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 18px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .subcategories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">National Electronics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#components">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Connectors Sub-Categories</h1>
+            <p>Explore detailed types of Connectors available at National Electronics.</p>
+        </div>
+    </section>
+
+    <!-- SUBCATEGORIES -->
+    <section class="container my-5">
+        <div class="subcategories-section">
+            <div class="container">
+                <h2 class="text-center mb-5" style="font-weight: 700; color: #495057;">Types of Connectors</h2>
+                <div class="subcategories-grid">
+                    <div class="subcategory-card">
+                        <i class="bi bi-plug"></i>
+                        <h6>Jumper Wires (Male-Male, Male-Female, Female-Female)</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-usb"></i>
+                        <h6>USB Connectors</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h6>DC Power Jack</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-diagram-3"></i>
+                        <h6>Pin Headers</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-terminal"></i>
+                        <h6>Terminal Blocks</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-ribbon"></i>
+                        <h6>Ribbon Cable Connectors</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-battery-full"></i>
+                        <h6>Battery Connectors</h6>
+                    </div>
+                    <div class="subcategory-card">
+                        <i class="bi bi-plug-fill"></i>
+                        <h6>JST Connectors</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h5>National Electronics</h5>
+            <p>Electronics Components & Spare Parts Store</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/nationalelectronics" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nationalelectronics" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p class="mt-3">© 2025 National Electronics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/919335003883" class="whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
