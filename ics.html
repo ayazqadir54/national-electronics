@@ -85,28 +85,27 @@
             padding: 20px;
         }
         .subcategory-card {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
+            background: white;
             border-radius: 15px;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+            overflow: hidden;
         }
         .subcategory-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            background: white;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         .subcategory-card i {
             font-size: 2rem;
             color: #ff4500;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .subcategory-card h6 {
             font-weight: 600;
             color: #495057;
-            margin: 0;
         }
         footer {
             background: linear-gradient(135deg, #6a0dad 0%, #ff4500 100%);
@@ -166,29 +165,29 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">National Electronics</a>
+            <a class="navbar-brand" href="code.html">National Electronics</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#home">Home</a>
+                        <a class="nav-link" href="code.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#categories">Categories</a>
+                        <a class="nav-link" href="code.html#categories">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#products">Products</a>
+                        <a class="nav-link" href="code.html#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#components">Components</a>
+                        <a class="nav-link" href="code.html#components">Components</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About Us</a>
+                        <a class="nav-link" href="code.html#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                        <a class="nav-link" href="code.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -196,7 +195,7 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" onclick="window.location.href='code.html#categories';" style="cursor: pointer;">
         <div class="container">
             <h1>ICs Sub-Categories</h1>
             <p>Explore detailed types of Integrated Circuits available at National Electronics.</p>
